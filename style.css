@@ -1,0 +1,119 @@
+body{
+  background-color: rgb(255, 121, 120);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  color: white;
+  font-weight:700;
+}
+
+p{
+  padding-top: 20px;
+  font-size: 13px;
+  color: white;
+}
+
+.container{
+  padding: 100px 100px 0 100px;
+}
+
+/* Formulários */
+.card{
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.form-control{
+  padding-left: 20px;
+
+}
+
+.form-text{
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.btn-try,
+.btn-try:active,
+.btn-try:visited,
+.btn-try:focus {
+    background-color: blue;
+    background-color: hsl(248, 32%, 49%);
+    border-color: blue;
+    border-color: hsl(248, 32%, 49%);
+    color:white;
+}
+
+.btn-try:hover{
+  background-color: blue;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+}
+
+.btn-submit,
+.btn-submit:active,
+.btn-submit:visited,
+.btn-submit:focus {
+    background-color: green;
+    background-color: hsl(154, 59%, 51%);
+    border-color: green;
+    border-color: hsl(154, 59%, 51%);
+    color:white;
+}
+
+.btn-submit:hover{
+  background-color: green;
+  background-color: hsl(154, 59%, 65%);
+  color: white;
+}
+
+.text-button{
+  color: white;
+  height: 2.5rem;
+}
+
+.text-try{
+  font-size: 0.7rem;
+  margin-bottom: 0.9rem;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.text-submit{
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+#information{
+  color: #B8B8B8;
+  font-size: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#information span{
+  color: rgb(255, 121, 120);
+}
+
+.invalid-feedback{
+  font-size: 0.5rem;
+  text-align: right;
+}
+
+footer{
+  padding: 80px 0 0 0;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("images/bg-intro-mobile.png");
+    }
+}
+
+@media (min-width: 376px) {
+    body {
+          background-image: url("images/bg-intro-desktop.png");
+    }
+}

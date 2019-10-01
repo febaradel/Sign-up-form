@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row  align-items-center">
+      <div class="col-lg col-md-6 col-sm">
+
+        <h1>Learn to code by watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </div>
+
+      <div class="col-lg col-md-6 col-sm">
+
+        <button id="bold-text" type="submit" class="btn btn-try form-control text-button text-try"><strong>Try it free 7 days </strong>then $20/mo. thereafter</button>
+        <div class="card">
+          <div class="card-body">
+            <form class="needs-validation" novalidate>
+
+              <div class="form-group">
+                <label for="inputFirstName"></label>
+                <input type="text" class="form-control form-text" id="inputFirstName" aria-describedby="emailHelp" placeholder="First Name" required>
+                <div class="invalid-feedback">
+                  First Name cannot be empty
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="lastName" class="form-control form-text" id="inputLastName" placeholder="Last Name" required>
+                <div class="invalid-feedback">
+                  Last Name cannot be empty
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control form-text" id="inputEmail" placeholder="Email Address" required>
+                <div class="invalid-feedback">
+                  Looks like this is not an email
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control form-text" id="inputPassword1" placeholder="Password" required>
+                <div class="invalid-feedback">
+                  Password cannot be empty
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-submit form-control text-button text-submit">Claim your free trial</button>
+              <small id="information" class="form-text">By clicking the button, you are agreeing to our <span>Terms and Services</span></small>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Fernanda</a>.
+      </p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            document.querySelector("#inputEmail").placeholder = "email@example.com";
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
